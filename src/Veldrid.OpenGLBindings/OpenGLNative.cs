@@ -942,22 +942,22 @@ namespace Veldrid.OpenGLBinding
 
         [UnmanagedFunctionPointer(CallConv)]
         private delegate void glBindImageTexture_t(
-            uint unit​,
-            uint texture​,
-            int level​,
-            GLboolean layered​,
-            int layer​,
-            TextureAccess access​,
-            SizedInternalFormat format​);
+            uint unit,
+            uint texture,
+            int level,
+            GLboolean layered,
+            int layer,
+            TextureAccess access,
+            SizedInternalFormat format);
         private static glBindImageTexture_t p_glBindImageTexture;
         public static void glBindImageTexture(
-            uint unit​,
-            uint texture​,
-            int level​,
-            GLboolean layered​,
-            int layer​,
-            TextureAccess access​,
-            SizedInternalFormat format​) => p_glBindImageTexture(unit, texture, level, layered, layer, access, format);
+            uint unit,
+            uint texture,
+            int level,
+            GLboolean layered,
+            int layer,
+            TextureAccess access,
+            SizedInternalFormat format) => p_glBindImageTexture(unit, texture, level, layered, layer, access, format);
 
         [UnmanagedFunctionPointer(CallConv)]
         private delegate void glMemoryBarrier_t(MemoryBarrierFlags barriers);
